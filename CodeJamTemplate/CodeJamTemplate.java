@@ -2,11 +2,14 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class BufferedReaderDemo {
+public class CodeJamTemplate {
 
 	public static void main(String[] args) {
 
 		BufferedReader br = null;
+
+		int N; 			//number of cases
+		int count=0;  	//line counter
 
 		try {
 
@@ -16,6 +19,9 @@ public class BufferedReaderDemo {
 
 			while ((sCurrentLine = br.readLine()) != null) {
 				System.out.println(sCurrentLine);
+
+				System.out.println("Case #" + ": "); 
+				count++;
 			}
 
 		} catch (IOException e) {
@@ -29,4 +35,6 @@ public class BufferedReaderDemo {
 		}
 
 	}
+
+	/* functions here */
 }
